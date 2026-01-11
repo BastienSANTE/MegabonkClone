@@ -1,0 +1,19 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/home/bastien/Unreal Projects/MyProject/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/ThirdPerson/Blueprints/BP_TestAttack.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/XP/BP_XPFragment.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/__ExternalActors__/ThirdPerson/Lvl_ThirdPerson/D/6S/LZ2R1AAVM7Q4THAFRWLQ9L.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/Characters/Mannequins/Rigs/CR_Mannequin_FootIK.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/UI/BP_MainInterface.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/DataStructures/ST_Player.uasset",
+				"/home/bastien/Unreal Projects/MyProject/Content/ThirdPerson/Blueprints/BP_SampleAttack.uasset"
+			]
+		}
+	]
+}

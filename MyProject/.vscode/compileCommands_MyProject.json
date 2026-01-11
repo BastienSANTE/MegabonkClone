@@ -1,0 +1,42 @@
+[
+	{
+		"file": "/home/bastien/Unreal Projects/MyProject/Source/MyProject/MyProject.Build.cs",
+		"arguments": [
+			"/home/bastien/bin/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/bastien/Unreal Projects/MyProject/.vscode/compileCommands_MyProject/MyProject.1.rsp"
+		],
+		"directory": "/home/bastien/bin/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/bastien/Unreal Projects/MyProject/Source/MyProject/MyProject.cpp",
+		"arguments": [
+			"/home/bastien/bin/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/bastien/Unreal Projects/MyProject/.vscode/compileCommands_MyProject/MyProject.1.rsp"
+		],
+		"directory": "/home/bastien/bin/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/bastien/Unreal Projects/MyProject/Source/MyProject/MyProject.h",
+		"arguments": [
+			"/home/bastien/bin/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/bastien/Unreal Projects/MyProject/.vscode/compileCommands_MyProject/MyProject.1.rsp"
+		],
+		"directory": "/home/bastien/bin/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/bastien/Unreal Projects/MyProject/Source/MyProject/SampleCPPClass.cpp",
+		"arguments": [
+			"/home/bastien/bin/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/bastien/Unreal Projects/MyProject/.vscode/compileCommands_MyProject/MyProject.1.rsp"
+		],
+		"directory": "/home/bastien/bin/UnrealEngine/Engine/Source"
+	},
+	{
+		"file": "/home/bastien/Unreal Projects/MyProject/Source/MyProject/SampleCPPClass.h",
+		"arguments": [
+			"/home/bastien/bin/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v25_clang-18.1.0-rockylinux8/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/bastien/Unreal Projects/MyProject/.vscode/compileCommands_MyProject/MyProject.1.rsp"
+		],
+		"directory": "/home/bastien/bin/UnrealEngine/Engine/Source"
+	}
+]

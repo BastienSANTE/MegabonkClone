@@ -1,0 +1,43 @@
+Generating report for minidump
+
+Application version 5.6.0.0
+ ... built from changelist 43139311
+
+OS version Linux 6.1.0-40-amd64 (network name: BastienLNX)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: MyOwnerWorld  [File:./Runtime/Engine/Private/Components/ActorComponent.cpp] [Line: 1965] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!UActorComponent::RegisterComponent() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1965]
+libUnrealEditor-MyProject-5435.so!AAttack::AAttack() [/home/bastien/Unreal Projects/MyProject/Source/MyProject/Attack.cpp:12]
+libUnrealEditor-CoreUObject.so!UClass::CreateDefaultObject() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5013]
+libUnrealEditor-CoreUObject.so!UClass::InternalCreateDefaultObjectWrapper() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5565]
+libUnrealEditor-UnrealEd.so!UE::Reload::Private::FReloadClassHelper::ReinstanceClass(UClass*, UE::Reload::Private::FReloadClassHelper::ClassReinstanceState&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h:3514]
+libUnrealEditor-UnrealEd.so!UE::Reload::Private::FReloadClassHelper::ReinstanceClasses(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/ReloadUtilities.cpp:689]
+libUnrealEditor-UnrealEd.so!FReload::Reinstance() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/ReloadUtilities.cpp:1146]
+libUnrealEditor-CoreUObject.so!ProcessNewlyLoadedUObjects(FName, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectBase.cpp:1071]
+libUnrealEditor-CoreUObject.so!TBaseStaticDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:47]
+libUnrealEditor-Core.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>, FName, bool>(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:258]
+libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1080]
+libUnrealEditor-Core.so!FModuleManager::GetOrLoadModule(FName, EModuleLoadResult&, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:734]
+libUnrealEditor-Core.so!FModuleManager::LoadModule(FName, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:715]
+libUnrealEditor-HotReload.so!FHotReloadModule::DoHotReloadInternal(TMap<FName, FString, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, FString, false> > const&, TArray<UPackage*, TSizedDefaultAllocator<32> > const&, TArray<FName, TSizedDefaultAllocator<32> > const&, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Developer/HotReload/Private/HotReload.cpp:838]
+libUnrealEditor-HotReload.so!FHotReloadModule::CheckForFinishedModuleDLLCompile(EHotReloadFlags, bool&, bool&, FOutputDevice&, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Function.h:471]
+libUnrealEditor-HotReload.so!FHotReloadModule::Tick(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Developer/HotReload/Private/HotReload.cpp:1253]
+libUnrealEditor-Core.so!UE::Core::Private::Function::TFunctionRefCaller<FTSTicker::FElement::FElement(double, float, TDelegate<bool (float), FDefaultDelegateUserPolicy> const&)::$_0, bool, float>::Call(void*, float&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:614]
+libUnrealEditor-Core.so!FTSTicker::Tick(float) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Function.h:471]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5852]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x27249)
+libc.so.6!__libc_start_main(+0x84)
+UnrealEditor!_start [/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

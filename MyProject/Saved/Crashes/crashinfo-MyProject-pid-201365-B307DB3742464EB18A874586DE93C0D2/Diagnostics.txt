@@ -1,0 +1,35 @@
+Generating report for minidump
+
+Application version 5.6.0.0
+ ... built from changelist 43139311
+
+OS version Linux 6.1.0-40-amd64 (network name: BastienLNX)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Core.so!FDebug::CheckVerifyFailedImpl2(char const*, char const*, int, char16_t const*, ...) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Misc/AssertionMacros.cpp:724]
+libUnrealEditor-Engine.so!UTickableWorldSubsystem::Deinitialize() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Subsystems/WorldSubsystem.cpp:104]
+libUnrealEditor-MyProject-9938.so!UMegabonkWorldSubsystem::Deinitialize() [/home/bastien/Unreal Projects/MyProject/Source/MyProject/MegabonkWorldSubsystem.cpp:10]
+libUnrealEditor-Engine.so!FSubsystemCollectionBase::Deinitialize() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Subsystems/SubsystemCollection.cpp:244]
+libUnrealEditor-Engine.so!UWorld::CleanupWorldInternal(bool, bool, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/World.cpp:6200]
+libUnrealEditor-Engine.so!UWorld::CleanupWorld(bool, bool, UWorld*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/World.cpp:5976]
+libUnrealEditor-UnrealEd.so!UEditorEngine::TeardownPlaySession(FWorldContext&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:902]
+libUnrealEditor-UnrealEd.so!UEditorEngine::EndPlayMap() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:341]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2486]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:530]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5619]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x27249)
+libc.so.6!__libc_start_main(+0x84)
+UnrealEditor!_start [/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

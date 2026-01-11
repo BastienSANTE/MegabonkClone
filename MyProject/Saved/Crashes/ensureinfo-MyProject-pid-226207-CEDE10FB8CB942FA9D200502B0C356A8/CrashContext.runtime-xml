@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FGenericCrashContext>
+	<RuntimeProperties>
+		<CrashVersion>3</CrashVersion>
+		<ExecutionGuid>1D5C82B6A2A24B1FAB6CA7E1F5182786</ExecutionGuid>
+		<CrashGUID>UECC-Linux-1015EFAA9E304BADA6EFDCB7B5EDD19A_0001</CrashGUID>
+		<IsEnsure>true</IsEnsure>
+		<IsStall>false</IsStall>
+		<IsAssert>false</IsAssert>
+		<CrashType>Ensure</CrashType>
+		<ErrorMessage>Ensure condition failed: MyOwnerWorld [File:./Runtime/Engine/Private/Components/ActorComponent.cpp] [Line: 1965] 
+
+Stack: 
+0x00007f52d5f50fac libUnrealEditor-Engine.so!UActorComponent::RegisterComponent() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1965]
+0x00007f50d6183e05 libUnrealEditor-MyProject.so!AAttack::AAttack() [/home/bastien/Unreal Projects/MyProject/Source/MyProject/Attack.cpp:12]
+0x00007f52d965d866 libUnrealEditor-CoreUObject.so!UClass::CreateDefaultObject() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5013]
+0x00007f52d96608f1 libUnrealEditor-CoreUObject.so!UClass::InternalCreateDefaultObjectWrapper() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5565]
+0x00007f52d9ae5ef8 libUnrealEditor-CoreUObject.so!ProcessNewlyLoadedUObjects(FName, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h:3514]
+0x00007f52d9b322de libUnrealEditor-CoreUObject.so!TBaseStaticDelegateInstance&lt;void (FName, bool), FDefaultDelegateUserPolicy&gt;::ExecuteIfSafe(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:47]
+0x00007f52da759ce8 libUnrealEditor-Core.so!void TMulticastDelegateBase&lt;FDefaultDelegateUserPolicy&gt;::Broadcast&lt;IBaseDelegateInstance&lt;void (FName, bool), FDefaultDelegateUserPolicy&gt;, FName, bool&gt;(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:258]
+0x00007f52daaf9ee4 libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&amp;, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1080]
+0x00007f52d9d861cd libUnrealEditor-Projects.so!FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray&lt;FModuleDescriptor, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, TMap&lt;FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs&lt;FName, EModuleLoadResult, false&gt; &gt;&amp;) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ModuleDescriptor.cpp:756]
+0x00007f52d9db86f8 libUnrealEditor-Projects.so!FProjectManager::LoadModulesForProject(ELoadingPhase::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ProjectManager.cpp:60]
+0x00000000002646a7 UnrealEditor!FEngineLoop::LoadStartupModules() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4425]
+0x000000000025f379 UnrealEditor!FEngineLoop::PreInitPostStartupScreen(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:3665]
+0x000000000024cbfc UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4159]
+0x00007f52db5eae5a libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+0x00007f52cda4524a libc.so.6!UnknownFunction(0x27249)
+0x00007f52cda45305 libc.so.6!__libc_start_main(+0x84)
+0x000000000023964a UnrealEditor!_start [ￋx:-1]
+</ErrorMessage>
+		<CrashReporterMessage />
+		<CrashReporterMessage>Attended</CrashReporterMessage>
+		<ProcessId>226207</ProcessId>
+		<SecondsSinceStart>0</SecondsSinceStart>
+		<IsInternalBuild>false</IsInternalBuild>
+		<IsPerforceBuild>false</IsPerforceBuild>
+		<IsWithDebugInfo>true</IsWithDebugInfo>
+		<IsSourceDistribution>false</IsSourceDistribution>
+		<GameName>UE-MyProject</GameName>
+		<ExecutableName>UnrealEditor</ExecutableName>
+		<BuildConfiguration>Development</BuildConfiguration>
+		<GameSessionID />
+		<PlatformName>LinuxEditor</PlatformName>
+		<PlatformFullName>Linux [Debian GNU/Linux 12 (bookworm) 6.1.0-40-amd64 64b]</PlatformFullName>
+		<PlatformNameIni>Linux</PlatformNameIni>
+		<EngineMode>Editor</EngineMode>
+		<EngineModeEx>Unset</EngineModeEx>
+		<DeploymentName />
+		<EngineVersion>5.6.0-43139311+++UE5+Release-5.6</EngineVersion>
+		<EngineCompatibleVersion>5.6.0-43139311+++UE5+Release-5.6</EngineCompatibleVersion>
+		<CommandLine>CommandLineRemoved</CommandLine>
+		<LanguageLCID>9</LanguageLCID>
+		<AppDefaultLocale>fr_FR</AppDefaultLocale>
+		<BuildVersion>++UE5+Release-5.6-CL-43139311</BuildVersion>
+		<Symbols>**UE5*Release-5.6-CL-43139311-Linux-Development</Symbols>
+		<IsUERelease>true</IsUERelease>
+		<IsRequestingExit>false</IsRequestingExit>
+		<UserName />
+		<BaseDir>/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/</BaseDir>
+		<RootDir>/home/bastien/bin/UnrealEngine/</RootDir>
+		<MachineId>CDEF97DDA4B74182A5FB46AA1CF1ED9A-000003E8</MachineId>
+		<LoginId>cdef97dda4b74182a5fb46aa1cf1ed9a-000003e8</LoginId>
+		<EpicAccountId />
+		<SourceContext />
+		<UserDescription>Sent in the unattended mode</UserDescription>
+		<UserActivityHint />
+		<CrashDumpMode>0</CrashDumpMode>
+		<GameStateName />
+		<Misc.NumberOfCores>16</Misc.NumberOfCores>
+		<Misc.NumberOfCoresIncludingHyperthreads>24</Misc.NumberOfCoresIncludingHyperthreads>
+		<Misc.Is64bitOperatingSystem>1</Misc.Is64bitOperatingSystem>
+		<Misc.CPUVendor>GenuineIntel</Misc.CPUVendor>
+		<Misc.CPUBrand>13th Gen Intel(R) Core(TM) i7-13700KF</Misc.CPUBrand>
+		<Misc.PrimaryGPUBrand>NVIDIA GeForce RTX 4070 (NVIDIA UNIX x86_64 Kernel Module 580.</Misc.PrimaryGPUBrand>
+		<Misc.OSVersionMajor>Debian GNU/Linux 12 (bookworm)</Misc.OSVersionMajor>
+		<Misc.OSVersionMinor>6.1.0-40-amd64</Misc.OSVersionMinor>
+		<Misc.AnticheatProvider />
+		<MemoryStats.TotalPhysical>33454321664</MemoryStats.TotalPhysical>
+		<MemoryStats.TotalVirtual>1024454656</MemoryStats.TotalVirtual>
+		<MemoryStats.PageSize>4096</MemoryStats.PageSize>
+		<MemoryStats.TotalPhysicalGB>32</MemoryStats.TotalPhysicalGB>
+		<MemoryStats.AvailablePhysical>0</MemoryStats.AvailablePhysical>
+		<MemoryStats.AvailableVirtual>0</MemoryStats.AvailableVirtual>
+		<MemoryStats.UsedPhysical>0</MemoryStats.UsedPhysical>
+		<MemoryStats.PeakUsedPhysical>0</MemoryStats.PeakUsedPhysical>
+		<MemoryStats.UsedVirtual>0</MemoryStats.UsedVirtual>
+		<MemoryStats.PeakUsedVirtual>0</MemoryStats.PeakUsedVirtual>
+		<MemoryStats.bIsOOM>0</MemoryStats.bIsOOM>
+		<MemoryStats.OOMAllocationSize>0</MemoryStats.OOMAllocationSize>
+		<MemoryStats.OOMAllocationAlignment>0</MemoryStats.OOMAllocationAlignment>
+		<NumMinidumpFramesToIgnore>7</NumMinidumpFramesToIgnore>
+		<CallStack>libUnrealEditor-Engine.so!UActorComponent::RegisterComponent() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1965]
+libUnrealEditor-MyProject.so!AAttack::AAttack() [/home/bastien/Unreal Projects/MyProject/Source/MyProject/Attack.cpp:12]
+libUnrealEditor-CoreUObject.so!UClass::CreateDefaultObject() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5013]
+libUnrealEditor-CoreUObject.so!UClass::InternalCreateDefaultObjectWrapper() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:5565]
+libUnrealEditor-CoreUObject.so!ProcessNewlyLoadedUObjects(FName, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h:3514]
+libUnrealEditor-CoreUObject.so!TBaseStaticDelegateInstance&lt;void (FName, bool), FDefaultDelegateUserPolicy&gt;::ExecuteIfSafe(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:47]
+libUnrealEditor-Core.so!void TMulticastDelegateBase&lt;FDefaultDelegateUserPolicy&gt;::Broadcast&lt;IBaseDelegateInstance&lt;void (FName, bool), FDefaultDelegateUserPolicy&gt;, FName, bool&gt;(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:258]
+libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&amp;, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1080]
+libUnrealEditor-Projects.so!FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray&lt;FModuleDescriptor, TSizedDefaultAllocator&lt;32&gt; &gt; const&amp;, TMap&lt;FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs&lt;FName, EModuleLoadResult, false&gt; &gt;&amp;) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ModuleDescriptor.cpp:756]
+libUnrealEditor-Projects.so!FProjectManager::LoadModulesForProject(ELoadingPhase::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ProjectManager.cpp:60]
+UnrealEditor!FEngineLoop::LoadStartupModules() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4425]
+UnrealEditor!FEngineLoop::PreInitPostStartupScreen(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:3665]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4159]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x27249)
+libc.so.6!__libc_start_main(+0x84)
+UnrealEditor!_start [/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/UnrealEditor:-1]
+</CallStack>
+		<PCallStack>
+
+libUnrealEditor-Engine 0x00007f52d2e00000 + 3150fac 
+libUnrealEditor-MyProject 0x00007f50d616e000 + 15e05 
+libUnrealEditor-CoreUObject 0x00007f52d9000000 + 65d866 
+libUnrealEditor-CoreUObject 0x00007f52d9000000 + 6608f1 
+libUnrealEditor-CoreUObject 0x00007f52d9000000 + ae5ef8 
+libUnrealEditor-CoreUObject 0x00007f52d9000000 + b322de 
+libUnrealEditor-Core 0x00007f52d9e00000 + 959ce8 
+libUnrealEditor-Core 0x00007f52d9e00000 + cf9ee4 
+libUnrealEditor-Projects 0x00007f52d9d3a000 + 4c1cd 
+libUnrealEditor-Projects 0x00007f52d9d3a000 + 7e6f8 
+UnrealEditor 0x0000000000200000 + 646a7 
+UnrealEditor 0x0000000000200000 + 5f379 
+UnrealEditor 0x0000000000200000 + 4cbfc 
+libUnrealEditor-UnixCommonStartup 0x00007f52db5e2000 + 8e5a 
+libc.so 0x00007f52cda1e000 + 2724a 
+libc.so 0x00007f52cda1e000 + 27305 
+UnrealEditor 0x0000000000200000 + 3964a 
+</PCallStack>
+		<PCallStackHash>41D9B836FA0E53EA591CA7CE5F3C626B37C24CF1</PCallStackHash>
+		<TimeOfCrash>639037530664590000</TimeOfCrash>
+		<bAllowToBeContacted>1</bAllowToBeContacted>
+		<CPUBrand>13th Gen Intel(R) Core(TM) i7-13700KF</CPUBrand>
+		<CrashReportClientVersion>1.0</CrashReportClientVersion>
+		<Modules />
+	</RuntimeProperties>
+	<PlatformProperties>
+		<CrashSignal>5</CrashSignal>
+		<CrashSignalName>Trace/breakpoint trap</CrashSignalName>
+		<PlatformCallbackResult>0</PlatformCallbackResult>
+		<CrashTrigger>0</CrashTrigger>
+	</PlatformProperties>
+	<EngineData>
+		<MatchingDPStatus>LinuxEditorNo errors</MatchingDPStatus>
+		<RHI.DriverDenylisted>false</RHI.DriverDenylisted>
+		<RHI.RHIName>Vulkan</RHI.RHIName>
+		<RHI.AdapterName>NVIDIA GeForce RTX 4070</RHI.AdapterName>
+		<RHI.UserDriverVersion>580.95</RHI.UserDriverVersion>
+		<RHI.InternalDriverVersion>580.95</RHI.InternalDriverVersion>
+		<RHI.DriverDate>01-01-01</RHI.DriverDate>
+		<RHI.FeatureLevel>SM6</RHI.FeatureLevel>
+		<RHI.GPUVendor>NVIDIA</RHI.GPUVendor>
+		<RHI.DeviceId>2786</RHI.DeviceId>
+		<DeviceProfile.Name>LinuxEditor</DeviceProfile.Name>
+	</EngineData>
+	<GameData>
+</GameData>
+</FGenericCrashContext>

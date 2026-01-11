@@ -1,0 +1,49 @@
+Generating report for minidump
+
+Application version 5.6.0.0
+ ... built from changelist 43139311
+
+OS version Linux 6.1.0-40-amd64 (network name: BastienLNX)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: !bRegistered  [File:./Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 2212] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!USceneComponent::SetupAttachment(USceneComponent*, FName)::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:2212]
+libUnrealEditor-Engine.so!USceneComponent::SetupAttachment(USceneComponent*, FName) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:2212]
+libUnrealEditor-MyProject-9019.so!AAttack::AAttack() [/home/bastien/Unreal Projects/MyProject/Source/MyProject/Attack.cpp:14]
+libUnrealEditor-CoreUObject.so!StaticConstructObject_Internal(FStaticConstructObjectParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:4958]
+libUnrealEditor-Engine.so!AActor* NewObject<AActor>(UObject*, UClass const*, FName, EObjectFlags, UObject*, bool, FObjectInstancingGraph*, UPackage*) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectGlobals.h:1883]
+libUnrealEditor-Engine.so!UWorld::SpawnActor(UClass*, UE::Math::TTransform<double> const*, FActorSpawnParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelActor.cpp:671]
+libUnrealEditor-Engine.so!UWorld::SpawnActor(UClass*, UE::Math::TVector<double> const*, UE::Math::TRotator<double> const*, FActorSpawnParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelActor.cpp:450]
+libUnrealEditor-UnrealEd.so!ReplaceActorHelper(AActor*, UClass*, UObject*&, UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >&, TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, TMap<FSoftObjectPath, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FSoftObjectPath, UObject*, false> >&, TMap<UObject*, FActorAttachmentData, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, FActorAttachmentData, false> >&, TArray<FActorReplacementHelper, TSizedDefaultAllocator<32> >&, bool, bool&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:2467]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::ReplaceInstancesOfClass_Inner(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, FReplaceInstancesOfClassParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:2860]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::FlushReinstancingQueueImpl(bool, TMap<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, false> >*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:2053]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::CompileSynchronouslyImpl(FBPCompileRequest const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:376]
+libUnrealEditor-UnrealEd.so!FKismetEditorUtilities::CompileBlueprint(UBlueprint*, EBlueprintCompileOptions, FCompilerResultsLog*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/Kismet2.cpp:777]
+libUnrealEditor-Kismet.so!FBlueprintEditor::Compile() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintEditor.cpp:4191]
+libUnrealEditor-Kismet.so!TBaseSPMethodDelegateInstance<false, FBlueprintEditor, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-Slate.so!FUICommandList::ExecuteAction(TSharedRef<FUICommandInfo const, (ESPMode)1>) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:635]
+libUnrealEditor-Slate.so!SToolBarButtonBlock::OnClicked() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/MultiBox/SToolBarButtonBlock.cpp:517]
+libUnrealEditor-Slate.so!TBaseSPMethodDelegateInstance<false, SToolBarButtonBlock, (ESPMode)1, FReply (), FDefaultDelegateUserPolicy>::Execute() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-Slate.so!SButton::ExecuteOnClick() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:614]
+libUnrealEditor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:419]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5367]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5938]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5894]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:237]
+UnrealEditor!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5548]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:60]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x27249)
+libc.so.6!__libc_start_main(+0x84)
+UnrealEditor!_start [/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

@@ -1,0 +1,44 @@
+Generating report for minidump
+
+Application version 5.6.0.0
+ ... built from changelist 43139311
+
+OS version Linux 6.1.0-40-amd64 (network name: BastienLNX)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: !bInitialized  [File:./Runtime/Engine/Private/Subsystems/WorldSubsystem.cpp] [Line: 115] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!UTickableWorldSubsystem::BeginDestroy()::$_0::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Subsystems/WorldSubsystem.cpp:115]
+libUnrealEditor-Engine.so!UTickableWorldSubsystem::BeginDestroy() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Subsystems/WorldSubsystem.cpp:115]
+libUnrealEditor-CoreUObject.so!UObject::ConditionalBeginDestroy() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:1230]
+libUnrealEditor-CoreUObject.so!UnhashUnreachableObjects(bool, double) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:6092]
+libUnrealEditor-CoreUObject.so!void UE::GC::PostCollectGarbageImpl<true>(EObjectFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:5700]
+libUnrealEditor-CoreUObject.so!UE::GC::FReachabilityAnalysisState::PerformReachabilityAnalysisAndConditionallyPurgeGarbage(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:5906]
+libUnrealEditor-CoreUObject.so!CollectGarbage(EObjectFlags, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/GarbageCollection.cpp:5774]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Cleanse(bool, bool, FText const&, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2836]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Cleanse(bool, bool, FText const&, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorSelectUtils.cpp:168]
+libUnrealEditor-UnrealEd.so!UEditorEngine::EditorDestroyWorld(FWorldContext&, FText const&, UWorld*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:2057]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Map_Load(char16_t const*, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:2452]
+libUnrealEditor-UnrealEd.so!UEditorEngine::HandleMapCommand(char16_t const*, FOutputDevice&, UWorld*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:6163]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Exec_Editor(UWorld*, char16_t const*, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:5680]
+libUnrealEditor-Core.so!FExec::Exec(UWorld*, char16_t const*, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Misc/Exec.cpp:18]
+libUnrealEditor-Engine.so!UEngine::Exec(UWorld*, char16_t const*, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/UnrealEngine.cpp:5143]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Exec(UWorld*, char16_t const*, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdSrv.cpp:662]
+libUnrealEditor-UnrealEd.so!FEditorFileUtils::LoadMap(FString const&, bool, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/FileHelpers.cpp:3015]
+libUnrealEditor-UnrealEd.so!FEditorFileUtils::LoadDefaultMapAtStartup() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/FileHelpers.cpp:5044]
+libUnrealEditor-UnrealEd.so!FUnrealEdMisc::OnInit() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdMisc.cpp:415]
+libUnrealEditor-UnrealEd.so!EditorInit(IEngineLoop&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdGlobals.cpp:194]
+UnrealEditor!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:164]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x27249)
+libc.so.6!__libc_start_main(+0x84)
+UnrealEditor!_start [/home/bastien/bin/UnrealEngine/Engine/Binaries/Linux/UnrealEditor:-1]
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
